@@ -15,7 +15,7 @@ public class test extends HttpServlet {
             Statement stm=conn.createStatement();
             stm.executeUpdate("insert into ipmail value('+ip+')");
             request.setAttribute("msg","你的ip地址为："+ip);
-            request.getRequestDispatcher("index.jsp").forward(request,response);
+            request.getRequestDispatcher("welcome.jsp").forward(request,response);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
