@@ -1,24 +1,17 @@
-<%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
-
-<%@ page import="java.util.*"%>
-<%@ page import="java.text.*"%>
-
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: 30213
+  Date: 2022/5/30
+  Time: 20:26
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>JSP</title>
-</head>
-<body>
-<%
-  // 获取IP
-  String ip = request.getRemoteAddr();
-
-  // 获取时间
-  String data = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
-%>
-<%-- 使用表达式语言进行输出 --%>
-<h2>HELLO!!!</h2>
-<h3><%=ip%></h3>
-</body>
+  <head>
+    <title>$Title$</title>
+  </head>
+  <body>
+  ABCD
+  <%=request.getAttribute("msg")%>
+  </body>
 </html>
